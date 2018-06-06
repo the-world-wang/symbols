@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>one.equinox</groupId>
   <artifactId>symbols</artifactId>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
   <build>
     <plugins>
       <plugin>
@@ -50,6 +50,13 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <profiles>
@@ -83,11 +90,4 @@
       </build>
     </profile>
   </profiles>
-  <distributionManagement>
-    <repository>
-      <id>bintray-repo-maven-mateuyabar</id>
-      <url>https://api.bintray.com/maven/equinox-one/maven/symbols/;publish=1</url>
-    </repository>
-  </distributionManagement>
 </project>
-

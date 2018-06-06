@@ -25,11 +25,11 @@ public class ClassModel {
     }
 
     public String getGeneratedClassName(){
-        return originModelClass +"Symbols";
+        return originModelClass + "Constants";
     }
 
     public String getGeneratedPackage(){
-        return originPackageName+".symbols";
+        return originPackageName;
     }
 
     public String getGeneratedFullName(){
